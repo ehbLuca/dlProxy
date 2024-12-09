@@ -1,0 +1,23 @@
+name: Tests
+
+on: [push]
+
+jobs:
+  Launch-Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Debug: Info"
+        run: |
+          printf '[%s] %s on %s (%s)\n' "${{github.event_name}}" "${{github.repository}}" "${{github.ref}}" "${{runner.os}}"
+          groups
+          whoami
+          hostname
+          pwd
+          pwsh -v
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: "Run Pester"
+        shell: pwsh
+        run: |
+          Invoke-Pester -Path ./tests/ -Output Detailed -CI -Debug
+
