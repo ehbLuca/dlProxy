@@ -32,6 +32,7 @@ if (
 }
 
 # The following commands must be run with administrator privileges
+# TODO: self-elevate https://stackoverflow.com/a/27872686
 New-VHD -Path $VHDPath -SizeBytes $VHDSize -Dynamic
 New-VMSwitch -Name $SwitchName -NetAdapterName "Ethernet" -SwitchType External
 
