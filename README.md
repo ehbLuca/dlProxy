@@ -21,6 +21,7 @@ Deadline: 05/01/2024
     - able to send installation requsets for .exe
 - [ ] Client service installation
     - able to receive requests
+- [ ] Logging
 
 ### Week 2 (16-22/12/2024)
 - [ ] Chocolatey & Winget installation support
