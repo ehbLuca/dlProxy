@@ -1,16 +1,7 @@
 # dlProxy Downloads proxy in Powershell
 
 ## Documentation
-### Files
-- `squid.ps1`: Helper script for developing and deploying the squid container. This script contains
-  helper functions for managing the container.
-- `./squid/squid.conf`: Configuration for squid see: <https://www.squid-cache.org/Doc/config/>.
-Copied over during build.
-- `./squid/entrypoint.sh`: Script run as first processby the container.
-- `./squid/Dockerfile`: File for building squid container. 
-
-### Squid
-- [ ] For now the only configuration in the config file is `http_access allow all`. This is because I do
+- WIP
 
 ## Planning
 Deadline: 05/01/2024
